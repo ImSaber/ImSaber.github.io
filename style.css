@@ -98,3 +98,28 @@ main {
   border-radius: 5px;
   text-decoration: none;
 }
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: #1178f7;
+  text-decoration: none;
+}
+
+.social-links a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-left: 5px;
+}
