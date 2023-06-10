@@ -62,6 +62,23 @@ main {
   transition: transform 0.3s ease;
 }
 
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-title span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.card-title:hover span {
+  font-size: 24px;
+}
+
 .card:hover img {
   transform: scale(1.1);
 }
@@ -84,9 +101,18 @@ main {
   opacity: 1;
 }
 
-.card-buttons {
-  display: flex;
-  gap: 10px;
+.card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #007bff;
 }
 
 .info-button,
