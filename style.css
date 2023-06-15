@@ -159,3 +159,14 @@ main {
   max-width: 100%;
   max-height: auto;
 }
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
