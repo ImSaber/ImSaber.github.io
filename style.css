@@ -149,3 +149,9 @@ main {
   object-fit: contain;
   margin-left: 5px;
 }
+
+.gamepreview{
+  width: fit-content;
+  height: fit-content;
+  align-content: center;
+}
