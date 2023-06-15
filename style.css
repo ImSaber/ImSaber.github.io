@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  margin-bottom: 80px; /* Adjust the value based on your footer height */
 }
 
 header {
