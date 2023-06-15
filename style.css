@@ -150,8 +150,7 @@ main {
   margin-left: 5px;
 }
 
-.gamepreview{
+.game-img{
   max-width: 100%;
   max-height: auto;
-  align-content: center;
 }
