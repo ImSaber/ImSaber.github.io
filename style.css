@@ -175,11 +175,17 @@ footer {
 .hero {
   text-align: center;
   padding: 100px 0;
+  transition: font-size 0.3s ease;
+}
+
+.hero:hover .hero-text {
+  font-size: 120%;
 }
 
 .company-name {
   font-size: 72px;
   margin-bottom: 20px;
+  margin-top: -20px;
 }
 
 .slogan {
@@ -210,18 +216,18 @@ footer {
 
 @media (max-width: 768px) {
   .company-name {
-    font-size: 48px;
+    font-size: 300px;
   }
 
   .slogan {
-    font-size: 32px;
+    font-size: 250px;
   }
 
   .company-info {
-    font-size: 18px;
+    font-size: 100px;
   }
 
   .cta-button {
-    font-size: 16px;
+    font-size: 100px;
   }
 }
