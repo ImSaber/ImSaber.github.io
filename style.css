@@ -285,3 +285,47 @@ footer {
   text-decoration: none;
   font-size: 24px;
 }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* About Us Section */
+.about-us {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.social-button {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: #555;
+}
