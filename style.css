@@ -231,3 +231,57 @@ footer {
     font-size: 100px;
   }
 }
+
+.donate-page {
+  text-align: center;
+  padding: 50px;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 100px;
+}
+
+.subtitle {
+  font-size: 32px;
+  color: #888;
+}
+
+.content {
+  margin-bottom: 60px;
+}
+
+.description {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.perks-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.perks-list {
+  list-style-type: disc;
+  margin-left: 40px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.donation-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.donation-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
