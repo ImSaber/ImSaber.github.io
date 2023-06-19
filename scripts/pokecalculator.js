@@ -97,25 +97,21 @@ function updateGameAndMethod() {
 }
 
 // Function to fetch Pokémon data from the API and display the Pokémon image
-async function fetchPokemonData(pokemonName) {
-  const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
-  const data = await response.json();
-  const pokemonImageURL = data.sprites.front_default;
-  console.log('Retrieved Pokémon image URL:', pokemonImageURL);
-  document.getElementById('pokemonImage').src = pokemonImageURL;
+async function fetchPokemonData() {
+    const pokemonName = document.getElementById('pokemonInput').value;
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+    const data = await response.json();
+    const pokemonImageURL = data.sprites.front_shiny;
+    console.log('Retrieved Pokémon image URL:', pokemonImageURL);
+    document.getElementById('pokemonImage').src = pokemonImageURL;
 }
+  
   
 // Function to handle the input change event and update the Pokémon image
 function handleInputChange() {
     const pokemonName = document.getElementById('pokemon').value.toLowerCase();
     fetchPokemonData(pokemonName);
-}
-
-const pokemonImageURL = 'https://example.com/path-to-pokemon-image.png';
-console.log(pokemonImageURL);
-document.getElementById('pokemonImage').src = pokemonImageURL;
-
-  
+} 
 
 // Add event listeners to the buttons and select elements
 document.getElementById('increase').addEventListener('click', increaseCount);
@@ -123,11 +119,11 @@ document.getElementById('decrease').addEventListener('click', decreaseCount);
 document.getElementById('updateCount').addEventListener('click', updateCustomCount);
 document.getElementById('generation').addEventListener('change', updateGameAndMethod);
 document.getElementById('method').addEventListener('change', updateGameAndMethod);
+
+document.getElementById('searchButton').addEventListener('click', fetchPokemonData);
   
 // Initial update of the encounter rate and probability
 updateEncounterRate();
-  
-  
 
 // Initial update
 updateGameAndMethod();

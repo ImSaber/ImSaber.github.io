@@ -32,7 +32,7 @@
 
   <main>
     <div class="container">
-        <h1 class="title">Shiny Pokémon Odds Calculator</h1>
+        <h1 class="title">Pokémon Shiny Odds Calculator</h1>
     
         <div class="input-container">
           <div>
@@ -63,10 +63,14 @@
 
         <div class="pokemon-container">
             <label for="pokemon">Pokemon Name:</label>
-            <input type="text" id="pokemon" placeholder="Enter Pokémon name">
-            <img id="pokemonImage" src="" alt="Pokemon">
+            <div class="search-container">
+              <input type="text" id="pokemonInput" placeholder="Enter Pokémon name">
+              <button id="searchButton">Search</button>
+            </div>
         </div>
     
+        <img id="pokemonImage" src="" alt="Pokemon">
+
         <div class="counter">
           <button id="decrease">-</button>
           <span id="count">0</span>
@@ -78,7 +82,6 @@
           <input type="number" id="customCount" min="0" value="0">
           <button id="updateCount">Update</button>
         </div>
-
     
         <div>
             <div id="encounterRate" class="encounter-rate"></div>

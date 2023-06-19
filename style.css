@@ -435,3 +435,25 @@ button {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  margin-right: 10px;
+}
+
+#pokemonImage {
+  width: 1000px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#customCount {
+  width: 200px; /* Adjust the desired width */
+  height: 30px; /* Adjust the desired height */
+  border-radius: 10px; /* Adjust the desired border radius */
+  margin-bottom: 10px;
+  font-size: 20px;
+}
