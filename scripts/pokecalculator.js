@@ -98,10 +98,11 @@ function updateGameAndMethod() {
 
 // Function to fetch Pokémon data from the API and display the Pokémon image
 async function fetchPokemonData(pokemonName) {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
-    const data = await response.json();
-    const pokemonImage = data.sprites.front_default;
-    document.getElementById('pokemonImage').src = pokemonImage;
+  const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+  const data = await response.json();
+  const pokemonImageURL = data.sprites.front_default;
+  console.log('Retrieved Pokémon image URL:', pokemonImageURL);
+  document.getElementById('pokemonImage').src = pokemonImageURL;
 }
   
 // Function to handle the input change event and update the Pokémon image
@@ -109,6 +110,11 @@ function handleInputChange() {
     const pokemonName = document.getElementById('pokemon').value.toLowerCase();
     fetchPokemonData(pokemonName);
 }
+
+const pokemonImageURL = 'https://example.com/path-to-pokemon-image.png';
+console.log(pokemonImageURL);
+document.getElementById('pokemonImage').src = pokemonImageURL;
+
   
 
 // Add event listeners to the buttons and select elements
