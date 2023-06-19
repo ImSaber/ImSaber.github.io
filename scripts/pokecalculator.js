@@ -98,7 +98,7 @@ function updateGameAndMethod() {
 
 // Function to fetch Pokémon data from the API and display the Pokémon image
 async function fetchPokemonData() {
-    const pokemonName = document.getElementById('pokemonInput').value;
+    const pokemonName = document.getElementById('pokemonInput').value.toLowerCase();
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
     const data = await response.json();
     const pokemonImageURL = data.sprites.front_shiny;
