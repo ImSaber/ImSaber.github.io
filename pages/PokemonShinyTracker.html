@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Details</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="Fav Icon" href ="/images/">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="/logo.png" alt="SaberByteStudio">
+        <h1>SaberByteStudio</h1>
+        <div>
+          <a href="https://twitter.com/your_twitter_link" target="_blank"><img src="/images/twitter.png" alt="Twitter"></a>
+          <a href="https://github.com/ImSaber" target="_blank"><img src="/images/github.png" alt="GitHub"></a>
+          <a href="https://itch.io/your_itchio_link" target="_blank"><img src="/images/itchio.png" alt="itch.io"></a>
+        </div>
+      </div>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./projects">Projects</a></li>
+        <li><a href="./aboutus">About Us</a></li>
+        <li><a href="./donate">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+        <h1 class="title">Shiny Pokémon Odds Calculator</h1>
+    
+        <div class="input-container">
+          <div>
+            <label class="label" for="generation">Generation:</label>
+            <select id="generation">
+              <option value="1">Generation 1</option>
+              <option value="2">Generation 2</option>
+              <option value="3">Generation 3</option>
+              <option value="4">Generation 4</option>
+              <option value="5">Generation 5</option>
+              <option value="6">Generation 6</option>
+              <option value="7">Generation 7</option>
+              <option value="8">Generation 8</option>
+              <option value="9">Generation 9</option>
+            </select>
+          </div>
+    
+          <div>
+            <label class="label" for="method">Hunting Method:</label>
+            <select id="method">
+              <option value="fullOdds">Full Odds</option>
+              <option value="masudaMethod">Masuda Method</option>
+              <option value="chainFishing">Chain Fishing</option>
+              <!-- Add other hunting methods here -->
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+            <label for="pokemon">Pokémon Name:</label>
+            <input type="text" id="pokemon" placeholder="Enter Pokémon Name">
+        </div>
+
+        <div class="pokemon-container">
+            <img id="pokemonImage" src="" alt="Pokemon Image">
+        </div>
+    
+        <div class="counter">
+          <button id="decrease">-</button>
+          <span id="count">0</span>
+          <button id="increase">+</button>
+        </div>
+    
+        <div id="EncounterCount">
+          <label for="customCount">Encounter Count:</label>
+          <input type="number" id="customCount" min="0" value="0">
+          <button id="updateCount">Update</button>
+        </div>
+    
+        <div>
+          <img id="pokemonIcon" class="pokemon-icon" src="" alt="Pokemon Icon">
+        </div>
+    
+        <div>
+            <div id="encounterRate" class="encounter-rate"></div>
+            <div id="probability" class="probability"></div>
+        </div>
+    <p> Disclaimer: Chain FInishing is not finished...</p>
+        <script src="/scripts/pokecalculator.js"></script>
+      </div>
+  </main>
+</body>
+<footer>
+  <div class="container">
+    <p>&copy; 2023 SaberByteStudio. All rights reserved.</p>
+  </div>
+</footer>
+</html>
