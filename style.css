@@ -461,3 +461,23 @@ button {
 .pokecalc-title{
   font-size: 61px;
 }
+
+.warframe-section {
+  margin-bottom: 20px;
+}
+
+.warframe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.warframe img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.warframe .name {
+  font-weight: bold;
+}
