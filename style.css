@@ -481,3 +481,145 @@ button {
 .warframe .name {
   font-weight: bold;
 }
+
+.pokemon-info-item {
+  margin-bottom: 5px;
+}
+
+.pokemon-info-item strong {
+  font-weight: bold;
+}
+
+.locations-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.locations-list li {
+  margin-bottom: 5px;
+}
+
+.evolution-chain {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.evolution-chain-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.evolution-chain-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.dropdown-tab {
+  display: none;
+}
+
+.pokemon-info-item {
+  margin: 0;
+  padding: 5px;
+}
+
+.pokemon-info-item strong {
+  font-weight: bold;
+}
+
+.game-location {
+  cursor: pointer;
+}
+
+.game-location:hover {
+  background-color: lightgray;
+}
+
+#pokemonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#pokemonSelection {
+  margin-bottom: 20px;
+}
+
+.pokemon-info-item {
+  margin-bottom: 5px;
+}
+
+#pokemonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#pokemonSelection {
+  margin-bottom: 20px;
+}
+
+#pokemonName {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#pokemonSprite {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+#pokemonDetails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+#pokemonDetails p {
+  margin: 0;
+}
+
+#pokemonDetails p:nth-child(even) {
+  font-weight: bold;
+}
+
+#pokemonLocation {
+  grid-column: 1 / span 2;
+}
+
+#pokemonMoves {
+  grid-column: 1 / span 2;
+}
+
+.pokemon-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pokemon-sprite-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-sprite {
+  margin-right: 10px;
+}
+
+.pokemon-sprite-shiny {
+  margin-left: 10px;
+}

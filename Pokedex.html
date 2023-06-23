@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokédex</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Pokédex Information</h1>
+  <div id="pokemonContainer">
+    <div id="pokemonSelection">
+      <select id="pokemonSelect">
+        <option value="">Select a Pokémon</option>
+      </select>
+      <input type="text" id="pokemonInput" placeholder="Enter Pokémon name">
+      <button id="pokemonSearchButton">Search</button>
+    </div>
+    <div id="pokemonInfo">
+        <h2 class="pokemon-name">${pokemonData.name.toUpperCase()}</h2>
+        <div class="pokemon-sprite-container text-center">
+          <img class="pokemon-sprite" src="${pokemonData.sprites.front_default}" alt="${pokemonData.name}">
+          <img class="pokemon-sprite-shiny" src="${pokemonData.sprites.front_shiny}" alt="${pokemonData.name} Shiny">
+        </div>
+      <div id="pokemonDetails">
+        <p id="pokemonType"></p>
+        <p id="pokemonEvolution"></p>
+        <p id="pokemonAbilities"></p>
+        <p id="pokemonHeight"></p>
+        <p id="pokemonWeight"></p>
+        <p id="pokemonLocation"></p>
+        <p id="pokemonMoves"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/pokeAPI.js"></script>
+</body>
+</html>
