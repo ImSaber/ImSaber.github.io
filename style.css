@@ -673,7 +673,194 @@ label {
   margin-bottom: 5px;
 }
 
-.socials{
-  max-height: 50px;
+.container {
+  display: flex;
+}
+
+.evidence-card {
+  flex: 1;
+  padding: 20px;
+  background-color: #c04d4d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.evidence-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.evidence-form label {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.ghost-list {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+}
+
+.ghost-card {
+  padding: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.evidence-bubble {
+  padding: 8px 16px;
+  background-color: #e3e3e3;
+  border-radius: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.evidence-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.ghost-section {
+  flex: 3;
+}
+
+.evidence-section {
+  flex: 1;
+  padding-right: 20px;
+  margin-left: -100px;
+  margin-right: 40px;
+}
+
+.evidence-card {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.evidence-card h2 {
+  font-size: 20px;
+}
+
+.evidence-card label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.ghost-section {
+  flex: 2;
+}
+
+.ghost-section h2 {
+  font-size: 30px;
+}
+
+#ghost-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.ghost-card {
+  background-color: #3843409c;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ghost-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ghost-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.evidence-bubble {
+  display: inline-block;
+  background-color: #ccc;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* Add this style for the checked evidence checkbox */
+.evidence-checkbox.checked::after {
+  content: '\2714'; /* Checkmark */
+  color: green;
+  font-size: 14px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+/* Add this style for the not-possible evidence checkbox */
+.evidence-checkbox.not-possible::after {
+  content: 'X'; /* Red X */
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.evidence-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: px;
+}
+
+.evidence-bubble {
+  background-color: #34d283ad;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.not-possible-section {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(62, 15, 15);
+  margin-top: 20px;
+}
+
+.not-possible-section h2 {
+  font-size: 20px;
+}
+
+.not-possible-section label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.not-possible-section input[type='checkbox'] {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.evidence-section h2 {
+  font-size: 20px;
+}
+
+.evidence-section label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.evidence-section input[type='checkbox'] {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
 }
 

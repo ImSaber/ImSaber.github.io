@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phasmophobia Ghost Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="phasmophobiahelper.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="SaberByteStudio">
+        <h1>SaberByteStudio</h1>
+      </div>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./projects">Projects</a></li>
+        <li><a href="./aboutus">About Us</a></li>
+        <li><a href="./donate">Donate</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="https://twitter.com/your_twitter_link" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="https://github.com/ImSaber" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+        <a href="https://itch.io/your_itchio_link" target="_blank"><img src="images/itchio.png" alt="itch.io"></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="section evidence-section">
+        <!-- Evidence Card Section -->
+        <div class="card">
+          <h2>Evidence</h2>
+          <form id="card evidence-form">
+            <label>
+              <input type="checkbox" name="evidence" value="EMF Level 5">
+              EMF Level 5
+            </label>
+            <label>
+              <input type="checkbox" name="evidence" value="Spirit Box">
+              Spirit Box
+            </label>
+            <label>
+              <input type="checkbox" name="evidence" value="Fingerprints">
+              Fingerprints
+            </label>
+            <label>
+              <input type="checkbox" name="evidence" value="Ghost Writing">
+              Ghost Writing
+            </label>
+            <label>
+              <input type="checkbox" name="evidence" value="Freezing Temperatures">
+              Freezing Temperatures
+            </label>
+            <label>
+              <input type="checkbox" name="evidence" value="Ghost Orb">
+              Ghost Orb
+            </label>
+            <label>
+                <input type="checkbox" name="evidence" value="D.O.T.S. Projector">
+                D.O.T.S. Projector
+            </label>
+          </form>
+        </div>
+
+        <!-- Not Possible Card Section -->
+        <div class="section not-possible-section"> <!-- Updated class name to match the JavaScript code -->
+          <h2>Not Possible</h2>
+          <form id="not-possible-form">
+            <label>
+              <input type="checkbox" name="notPossible" value="EMF Level 5">
+              EMF Level 5
+            </label>
+            <label>
+              <input type="checkbox" name="notPossible" value="Spirit Box">
+              Spirit Box
+            </label>
+            <label>
+              <input type="checkbox" name="notPossible" value="Fingerprints">
+              Fingerprints
+            </label>
+            <label>
+              <input type="checkbox" name="notPossible" value="Ghost Writing">
+              Ghost Writing
+            </label>
+            <label>
+              <input type="checkbox" name="notPossible" value="Freezing Temperatures">
+              Freezing Temperatures
+            </label>
+            <label>
+              <input type="checkbox" name="notPossible" value="Ghost Orb">
+              Ghost Orb
+            </label>
+            <label>
+                <input type="checkbox" name="notPossible" value="D.O.T.S. Projector">
+                D.O.T.S. Projector
+            </label>
+          </form>
+        </div>
+      </div>
+      
+      <div class="ghost-section">
+        <!-- Potential Ghosts Section -->
+        <h2>Potential Ghosts</h2>
+        <div id="ghost-list">
+          <!-- Ghost Cards will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 SaberByteStudio. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
