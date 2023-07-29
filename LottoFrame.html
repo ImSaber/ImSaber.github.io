@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warframe Relic Simulator </title>
+        <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="inventory">
+        <h2>Relic Inventory</h2>
+        <div id="relicInventory"></div>
+        <div id="itemInventory" style="display: none;"></div>
+      </div>
+      
+      <div class="inventory">
+        <h2>Your Inventory</h2>
+        <div id="inventoryList"></div>
+      </div>
+      
+      <button id="inventorySwitch">Switch to Item Inventory</button>
+      <div id="platinumBalance">Platinum: 0</div>
+      
+      <!-- Modal to display relic details -->
+      <div id="myModal" class="modal">
+        <div class="modal-content" id="modalContent">
+          <span class="close" id="modalClose">&times;</span>
+          <h3 id="relicName"></h3>
+          <p>Market Worth: <span id="relicWorth"></span> Platinum</p>
+          <p>Choose an action:</p>
+          <button id="openBtn">Open Relic</button>
+          <button id="sellBtn">Sell Relic</button>
+        </div>
+      </div>
+
+    <script src="scripts/lottoframe.js"></script>
+</body>
+</html>
